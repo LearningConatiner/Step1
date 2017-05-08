@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                ocker build -t helloworld
+                docker build -t helloworld
                 docker run -d -p 4000:4000 helloworld
             }
         }
