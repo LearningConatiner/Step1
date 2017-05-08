@@ -42,5 +42,5 @@ The scope of this step is to just understand how to build a docker image, run an
 		    docker ps -a
     
      
-    
+    End
     
