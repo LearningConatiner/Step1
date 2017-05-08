@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh ./docketBuild.sh
+                sh './docketBuild.sh'
             }
         }
     }
