@@ -4,8 +4,9 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh 'apt-get install flask'                 
-                sh 'python hello.py'                
+                sh 'chmod +x dockerBuild.sh'
+                sh './dockerBuild.sh'
+                      
             }
         }
     }
