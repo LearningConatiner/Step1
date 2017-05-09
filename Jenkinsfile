@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
+                sh 'apt-get install python-flask'                 
                 sh 'python hello.py'                
             }
         }
