@@ -4,8 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh 'chmod +x dockerBuild.sh'
-                sh './dockerBuild.sh'
+                sh 'python hello.py'                
             }
         }
     }
